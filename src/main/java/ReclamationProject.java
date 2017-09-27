@@ -36,11 +36,11 @@ public class ReclamationProject {
          * For loop with i
          */
 
-        for (int i = 0; i < a.length(); i++) {
-            for (int j = a.length() - i; j > 0; j--) {
-                for (int k = 0; k < b.length() - j; k++) {
-                    if (a.regionMatches(i, b, k, j) && j > r.length()) {
-                        r = a.substring(i, i + j);
+        for (int i = 0; i < tempA.length(); i++) { //going through a
+            for (int j = tempA.length() - i; j > 0; j--) {
+                for (int k = 0; k < tempB.length() - j; k++) {
+                    if (tempA.regionMatches(i, b, k, j) && j > r.length()) {
+                        r = tempA.substring(i, i + j);
                     } //end if
                 } //end for
             } // end for
